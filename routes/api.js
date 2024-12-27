@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('../db/dbConfig');
+const pool = require('../db/dbConfig').default;
 const router = express.Router();
 
 // Add Expense
