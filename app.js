@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const api = require('./routes/api');
+const api = require('./routes/api.js');
 
 dotenv.config({ path: './ExpenseTracker/.env' });
 const app = express();
