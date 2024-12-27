@@ -1,6 +1,6 @@
-const express = require('express');
-const pool = require('../db/dbConfig').default;
-const router = express.Router();
+import { Router } from 'express';
+import pool from '../db/dbConfig';
+const router = Router();
 
 // Add Expense
 router.post('/add-expense', async (req, res) => {
@@ -27,4 +27,4 @@ router.get('/expenses/:userId', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;
